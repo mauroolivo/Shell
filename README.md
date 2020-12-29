@@ -1,2 +1,2 @@
-# shell
+# Shell
 Experimental iOS shell app
