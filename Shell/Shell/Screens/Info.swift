@@ -1,10 +1,3 @@
-//
-//  Info.swift
-//  Shell
-//
-//  Created by Mauro Olivo on 30/12/20.
-//
-
 import SwiftUI
 
 struct Info: View {
