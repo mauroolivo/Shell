@@ -1,20 +1,23 @@
-//
-//  Welcome.swift
-//  Shell
-//
-//  Created by Mauro Olivo on 29/12/20.
-//
-
 import SwiftUI
 
 struct Welcome: View {
+    
+    var showLogin: (() -> Void)
+    
     var body: some View {
-        Text("Welcome")
+        VStack {
+            Text("Welcome to the Shell app")
+            Spacer()
+            Button(action: showLogin, label: {
+                Text("Login")
+            })
+            Spacer()
+        }
     }
 }
 
 struct Welcome_Previews: PreviewProvider {
     static var previews: some View {
-        Welcome()
+        Welcome(showLogin: {})
     }
 }

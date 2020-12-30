@@ -13,9 +13,21 @@ class MainCoordinator: NSObject, Coordinator {
 
 extension MainCoordinator {
     func start() {
-        let view = Welcome()
+        let view = Welcome(showLogin: {[weak self] in self?.showLogin()})
         let vc = HostController(rootView: view)
-        navigationController.pushViewController(vc, animated: true)
+        push(vc)
+    }
+    
+    func showLogin() {
+        let view = Login(onLogin: {}, onInfo: {[weak self] in self?.showInfo()})
+        let vc = HostController(rootView: view)
+        push(vc)
+    }
+    
+    func showInfo() {
+        let view = Info(onRight: {[weak self] in self?.dismiss()})
+        let vc = HostController(rootView: view)
+        present(vc)
     }
 }
 

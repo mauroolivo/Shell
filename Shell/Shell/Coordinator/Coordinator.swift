@@ -28,4 +28,12 @@ extension Coordinator {
     func dismiss() {
         navigationController.dismiss(animated: true, completion: nil)
     }
+    
+    func push(_ vc: UIViewController) {
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func present(_ vc: UIViewController) {
+        navigationController.present(vc, animated: true, completion: nil)
+    }
 }
