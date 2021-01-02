@@ -1,10 +1,3 @@
-//
-//  Privacy.swift
-//  Shell
-//
-//  Created by Mauro Olivo on 02/01/21.
-//
-
 import SwiftUI
 
 struct Privacy: View {

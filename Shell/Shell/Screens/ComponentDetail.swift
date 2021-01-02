@@ -1,10 +1,3 @@
-//
-//  ComponentDetail.swift
-//  Shell
-//
-//  Created by Mauro Olivo on 02/01/21.
-//
-
 import SwiftUI
 
 struct ComponentDetail: View {

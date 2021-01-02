@@ -17,15 +17,6 @@ extension MainCoordinator {
         let vc = HostController(rootView: view)
         push(vc)
     }
-    
-    /// pass data via coordinator
-    /// restart to TabBar
-    
-//    func showLogin() {
-//        let view = Login(onLogin: {[weak self] in self?.showTabBar()}, onInfo: {[weak self] in self?.showInfo()})
-//        let vc = HostController(rootView: view)
-//        push(vc)
-//    }
 
     func showAbout() {
         let view = About(onRight: {[weak self] in self?.dismiss()})

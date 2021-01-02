@@ -37,29 +37,4 @@ class Flow1Coordinator: NSObject, Coordinator {
         }
     }
     
-//    func showDetail() {
-//        let view = Flow1Detail(onLeft: {[weak self] in self?.pop()},
-//                               onClose: {[weak self] in self?.onClose()})
-//        let vc = HostController(rootView: view)
-////        vc.hidesBottomBarWhenPushed = true
-//        navigationController.pushViewController(vc, animated: true)
-//    }
-//    
-//    func showTab(_ index: Int) {
-//        if let parent = parentCoordinator as? MainCoordinator {
-//            parent.nextTab(index)
-//        }
-//    }
-//    
-//    func onClose() {
-//        if let parent = parentCoordinator as? MainCoordinator {
-//            parent.onCloseTab()
-//        }
-//    }
-    
-    //    func childEnd() {
-    //        pop()
-    //        onComplete?(self)
-    //    }
-    
 }
