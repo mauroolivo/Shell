@@ -16,7 +16,8 @@ class Flow2Coordinator: NSObject, Coordinator {
     deinit { print("deinit \(self.classForCoder)") }
     
     func start() {
-        let view = Account(onPrivacy: {[weak self] in self?.showPrivacy()})
+        let view = Account(onPrivacy: {[weak self] in self?.showPrivacy()},
+                           onCloseTab: {[weak self] in self?.onCloseTab()})
         let vc = HostController(rootView: view)
         vc.tabBarItem = UITabBarItem(title: "Account",
                                      image: UIImage(systemName: "person.fill"),
@@ -29,5 +30,11 @@ class Flow2Coordinator: NSObject, Coordinator {
         let vc = HostController(rootView: view, navigationBarHidden: false)
         vc.title = "Privacy"
         push(vc)
+    }
+    
+    func onCloseTab() {
+        if let parent = parentCoordinator as? MainCoordinator {
+            parent.onCloseTab()
+        }
     }
 }

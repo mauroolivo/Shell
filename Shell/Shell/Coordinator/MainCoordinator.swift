@@ -18,8 +18,6 @@ extension MainCoordinator {
         push(vc)
     }
     
-    /// bedge
-    /// back to welcome
     /// push full screen
     /// restart to TabBar
     
@@ -53,10 +51,12 @@ extension MainCoordinator {
         childCoordinators.forEach({ $0.start() })
         tabBarController.viewControllers = childCoordinators.map({ $0.navigationController })
         
-//        tabBarController.selectedViewController = flow2Coordinator.navigationController
-        
-        navigationController.pushViewController(tabBarController, animated: true)
+        /// tabBarController.selectedViewController = flow2Coordinator.navigationController
 
+        navigationController.pushViewController(tabBarController, animated: true)
+        
+        /// keep after push viewController
+        setBedge(value: "3", index: 2)
     }
     
     func selectLastTab() {
@@ -64,6 +64,23 @@ extension MainCoordinator {
             if let vcs = tab.viewControllers {
                 tab.selectedIndex = vcs.count - 1
             }
+        }
+    }
+    
+    func setBedge(value: String, index: Int) {
+        if let tabBarController = navigationController.viewControllers.last as? TabBarController {
+            if let vc = tabBarController.viewControllers?[index] {
+                vc.tabBarItem.badgeColor = Colors.uiAccent
+                vc.tabBarItem.badgeValue = value
+            }
+        }
+
+    }
+    
+    func onCloseTab() {
+        childCoordinators = []
+        if let _ = navigationController.viewControllers.last as? TabBarController {
+            navigationController.popViewController(animated: true)
         }
     }
 }
