@@ -10,6 +10,7 @@ import SwiftUI
 struct Components: View {
     
     var onCart: (() -> Void)
+    var onComponentDetail: ((Int) -> Void)
     
     var body: some View {
         ZStack
@@ -23,6 +24,11 @@ struct Components: View {
                     Text("Show Cart")
                         .foregroundColor(Colors.accent)
                 })
+                Button(action: { onComponentDetail(2) } , label: {
+                    
+                    Text("Show detail full screen")
+                        .foregroundColor(Colors.accent)
+                })
                 Spacer()
             }
             
@@ -32,6 +38,6 @@ struct Components: View {
 
 struct Components_Previews: PreviewProvider {
     static var previews: some View {
-        Components(onCart: {})
+        Components(onCart: {}, onComponentDetail: { _ in })
     }
 }

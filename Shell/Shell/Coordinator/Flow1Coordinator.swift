@@ -16,7 +16,8 @@ class Flow1Coordinator: NSObject, Coordinator {
     deinit { print("deinit \(self.classForCoder)") }
     
     func start() {
-        let view = Components(onCart: {[weak self] in self?.showCart()})
+        let view = Components(onCart: {[weak self] in self?.showCart()},
+                              onComponentDetail: {[weak self] n in self?.showComponentDetail(n)})
         let vc = HostController(rootView: view)
         vc.tabBarItem = UITabBarItem(title: "Components",
                                      image: UIImage(systemName: "circle.grid.hex.fill"),
@@ -27,6 +28,12 @@ class Flow1Coordinator: NSObject, Coordinator {
     func showCart() {
         if let parent = parentCoordinator as? MainCoordinator {
             parent.selectLastTab()
+        }
+    }
+    
+    func showComponentDetail(_ n: Int) {
+        if let parent = parentCoordinator as? MainCoordinator {
+            parent.showComponentDetail(n)
         }
     }
     

@@ -11,6 +11,7 @@
 		342FEEF325A055BE001BE314 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342FEEF225A055BE001BE314 /* Privacy.swift */; };
 		342FEEF825A056EE001BE314 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342FEEF725A056EE001BE314 /* NavigationController.swift */; };
 		342FEEFD25A0591A001BE314 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342FEEFC25A0591A001BE314 /* Colors.swift */; };
+		342FEF1825A09FC6001BE314 /* ComponentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342FEF1725A09FC6001BE314 /* ComponentDetail.swift */; };
 		3446A3D3259CE010001C338C /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446A3D2259CE010001C338C /* About.swift */; };
 		3446A3D9259CE062001C338C /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446A3D8259CE062001C338C /* TopBar.swift */; };
 		3446A3E1259CF982001C338C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446A3E0259CF982001C338C /* TabBarController.swift */; };
@@ -56,6 +57,7 @@
 		342FEEF225A055BE001BE314 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
 		342FEEF725A056EE001BE314 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		342FEEFC25A0591A001BE314 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		342FEF1725A09FC6001BE314 /* ComponentDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentDetail.swift; sourceTree = "<group>"; };
 		3446A3D2259CE010001C338C /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		3446A3D8259CE062001C338C /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		3446A3E0259CF982001C338C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				3446A3F2259D0FA1001C338C /* Account.swift */,
 				3446A401259D125F001C338C /* Cart.swift */,
 				342FEEF225A055BE001BE314 /* Privacy.swift */,
+				342FEF1725A09FC6001BE314 /* ComponentDetail.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				3446A3EE259D0206001C338C /* Components.swift in Sources */,
 				34DFB587259BA3FE002F9925 /* Coordinator.swift in Sources */,
 				34DFB581259BA3D8002F9925 /* HostController.swift in Sources */,
+				342FEF1825A09FC6001BE314 /* ComponentDetail.swift in Sources */,
 				3446A3F3259D0FA1001C338C /* Account.swift in Sources */,
 				3446A3E9259D019E001C338C /* Flow1Coordinator.swift in Sources */,
 				3446A3E1259CF982001C338C /* TabBarController.swift in Sources */,

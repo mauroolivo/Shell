@@ -18,7 +18,7 @@ extension MainCoordinator {
         push(vc)
     }
     
-    /// push full screen
+    /// pass data via coordinator
     /// restart to TabBar
     
 //    func showLogin() {
@@ -75,6 +75,14 @@ extension MainCoordinator {
             }
         }
 
+    }
+    
+    func showComponentDetail(_ n: Int) {
+        let view = ComponentDetail()
+        let vc = HostController(rootView: view, navigationBarHidden: false)
+        vc.title = "Component Detail \(n)"
+        navigationController.hidesBottomBarWhenPushed = true
+        push(vc)
     }
     
     func onCloseTab() {
