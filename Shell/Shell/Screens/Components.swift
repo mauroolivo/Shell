@@ -9,8 +9,16 @@ import SwiftUI
 
 struct Components: View {
     var body: some View {
-        Text("Components")
-        Spacer()
+        ZStack
+        {
+            Colors.bg.ignoresSafeArea()
+            VStack {
+                Text("Components")
+                    .foregroundColor(Colors.text)
+                Spacer()
+            }
+            
+        }
     }
 }
 

@@ -9,8 +9,16 @@ import SwiftUI
 
 struct Cart: View {
     var body: some View {
-        Text("Cart")
-        Spacer()
+        ZStack
+        {
+            Colors.bg.ignoresSafeArea()
+            VStack {
+                Text("Cart")
+                    .foregroundColor(Colors.text)
+                Spacer()
+            }
+            
+        }
     }
 }
 

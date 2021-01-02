@@ -5,11 +5,11 @@ class TabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // tabBar.barTintColor = .white
-        tabBar.tintColor = .black
-        tabBar.unselectedItemTintColor = .lightGray
+        
+        tabBar.barTintColor = Colors.uiBg
+        tabBar.tintColor = Colors.uiAccent
+        tabBar.unselectedItemTintColor = Colors.uiText
         // tabBar.clipsToBounds = true
-
     }
 
 

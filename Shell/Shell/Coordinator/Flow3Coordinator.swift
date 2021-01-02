@@ -3,13 +3,13 @@ import SwiftUI
 
 class Flow3Coordinator: NSObject, Coordinator {
     var childCoordinators = [Coordinator]()
-    var navigationController: UINavigationController
+    var navigationController: NavigationController
     
     weak var parentCoordinator: Coordinator?
     
     var onComplete: ((Coordinator) -> Void)?
     
-    init(navigationController: UINavigationController) {
+    init(navigationController: NavigationController) {
         self.navigationController = navigationController
     }
     

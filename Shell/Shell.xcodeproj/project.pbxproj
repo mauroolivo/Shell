@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		342FEEE8259FCDC7001BE314 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 342FEEE7259FCDC7001BE314 /* Colors.xcassets */; };
+		342FEEF325A055BE001BE314 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342FEEF225A055BE001BE314 /* Privacy.swift */; };
+		342FEEF825A056EE001BE314 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342FEEF725A056EE001BE314 /* NavigationController.swift */; };
+		342FEEFD25A0591A001BE314 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342FEEFC25A0591A001BE314 /* Colors.swift */; };
 		3446A3D3259CE010001C338C /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446A3D2259CE010001C338C /* Info.swift */; };
 		3446A3D9259CE062001C338C /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446A3D8259CE062001C338C /* TopBar.swift */; };
 		3446A3E1259CF982001C338C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446A3E0259CF982001C338C /* TabBarController.swift */; };
 		3446A3E9259D019E001C338C /* Flow1Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446A3E8259D019E001C338C /* Flow1Coordinator.swift */; };
 		3446A3EE259D0206001C338C /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446A3ED259D0206001C338C /* Components.swift */; };
-		3446A3F3259D0FA1001C338C /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446A3F2259D0FA1001C338C /* Profile.swift */; };
+		3446A3F3259D0FA1001C338C /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446A3F2259D0FA1001C338C /* Account.swift */; };
 		3446A3F8259D0FC7001C338C /* Flow2Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446A3F7259D0FC7001C338C /* Flow2Coordinator.swift */; };
 		3446A3FD259D122F001C338C /* Flow3Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446A3FC259D122F001C338C /* Flow3Coordinator.swift */; };
 		3446A402259D125F001C338C /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3446A401259D125F001C338C /* Cart.swift */; };
@@ -48,12 +52,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		342FEEE7259FCDC7001BE314 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		342FEEF225A055BE001BE314 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
+		342FEEF725A056EE001BE314 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		342FEEFC25A0591A001BE314 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		3446A3D2259CE010001C338C /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		3446A3D8259CE062001C338C /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
 		3446A3E0259CF982001C338C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3446A3E8259D019E001C338C /* Flow1Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow1Coordinator.swift; sourceTree = "<group>"; };
 		3446A3ED259D0206001C338C /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
-		3446A3F2259D0FA1001C338C /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		3446A3F2259D0FA1001C338C /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		3446A3F7259D0FC7001C338C /* Flow2Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow2Coordinator.swift; sourceTree = "<group>"; };
 		3446A3FC259D122F001C338C /* Flow3Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow3Coordinator.swift; sourceTree = "<group>"; };
 		3446A401259D125F001C338C /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
@@ -141,6 +149,7 @@
 				34DFB545259BA278002F9925 /* AppDelegate.swift */,
 				34DFB547259BA278002F9925 /* SceneDelegate.swift */,
 				34DFB54E259BA27B002F9925 /* Assets.xcassets */,
+				342FEEE7259FCDC7001BE314 /* Colors.xcassets */,
 				34DFB550259BA27B002F9925 /* LaunchScreen.storyboard */,
 				34DFB553259BA27B002F9925 /* Info.plist */,
 			);
@@ -168,17 +177,10 @@
 		34DFB57E259BA3B5002F9925 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				34DFB57F259BA3BF002F9925 /* HostController */,
+				34DFB580259BA3D8002F9925 /* HostController.swift */,
+				342FEEFC25A0591A001BE314 /* Colors.swift */,
 			);
 			path = Utility;
-			sourceTree = "<group>";
-		};
-		34DFB57F259BA3BF002F9925 /* HostController */ = {
-			isa = PBXGroup;
-			children = (
-				34DFB580259BA3D8002F9925 /* HostController.swift */,
-			);
-			path = HostController;
 			sourceTree = "<group>";
 		};
 		34DFB585259BA3E9002F9925 /* Coordinator */ = {
@@ -197,12 +199,14 @@
 			isa = PBXGroup;
 			children = (
 				3446A3E0259CF982001C338C /* TabBarController.swift */,
+				342FEEF725A056EE001BE314 /* NavigationController.swift */,
 				34DFB594259BA451002F9925 /* Welcome.swift */,
 				34DFB5A2259BB397002F9925 /* Login.swift */,
 				3446A3D2259CE010001C338C /* Info.swift */,
 				3446A3ED259D0206001C338C /* Components.swift */,
-				3446A3F2259D0FA1001C338C /* Profile.swift */,
+				3446A3F2259D0FA1001C338C /* Account.swift */,
 				3446A401259D125F001C338C /* Cart.swift */,
+				342FEEF225A055BE001BE314 /* Privacy.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -318,6 +322,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342FEEE8259FCDC7001BE314 /* Colors.xcassets in Resources */,
 				34DFB552259BA27B002F9925 /* LaunchScreen.storyboard in Resources */,
 				34DFB54F259BA27B002F9925 /* Assets.xcassets in Resources */,
 			);
@@ -345,10 +350,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3446A3FD259D122F001C338C /* Flow3Coordinator.swift in Sources */,
+				342FEEFD25A0591A001BE314 /* Colors.swift in Sources */,
 				3446A3EE259D0206001C338C /* Components.swift in Sources */,
 				34DFB587259BA3FE002F9925 /* Coordinator.swift in Sources */,
 				34DFB581259BA3D8002F9925 /* HostController.swift in Sources */,
-				3446A3F3259D0FA1001C338C /* Profile.swift in Sources */,
+				3446A3F3259D0FA1001C338C /* Account.swift in Sources */,
 				3446A3E9259D019E001C338C /* Flow1Coordinator.swift in Sources */,
 				3446A3E1259CF982001C338C /* TabBarController.swift in Sources */,
 				34DFB546259BA278002F9925 /* AppDelegate.swift in Sources */,
@@ -356,8 +362,10 @@
 				3446A3D3259CE010001C338C /* Info.swift in Sources */,
 				34DFB58F259BA40F002F9925 /* MainCoordinator.swift in Sources */,
 				34DFB595259BA451002F9925 /* Welcome.swift in Sources */,
+				342FEEF825A056EE001BE314 /* NavigationController.swift in Sources */,
 				3446A402259D125F001C338C /* Cart.swift in Sources */,
 				34DFB59E259BAE6C002F9925 /* View.swift in Sources */,
+				342FEEF325A055BE001BE314 /* Privacy.swift in Sources */,
 				3446A3D9259CE062001C338C /* TopBar.swift in Sources */,
 				34DFB548259BA278002F9925 /* SceneDelegate.swift in Sources */,
 				34DFB5A3259BB397002F9925 /* Login.swift in Sources */,
