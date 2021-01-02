@@ -3,17 +3,18 @@ import SwiftUI
 struct Welcome: View {
     
     var showTabBar: (() -> Void)
+    var onRight: (() -> Void)
     
     var body: some View {
         ZStack
         {
             Colors.bg.ignoresSafeArea()
             VStack {
-                Text("Welcome to the Shell app")
+                TopBar(title: "Welcome to the Shell app", hideLeft: true, hideRight: false, onRight: onRight)
                     .foregroundColor(Colors.text)
                 Spacer()
                 Button(action: showTabBar, label: {
-                    Text("Login")
+                    Text("ENTER")
                         .foregroundColor(Colors.accent)
                 })
                 Spacer()
@@ -24,6 +25,6 @@ struct Welcome: View {
 
 struct Welcome_Previews: PreviewProvider {
     static var previews: some View {
-        Welcome(showTabBar: {})
+        Welcome(showTabBar: {}, onRight: {})
     }
 }

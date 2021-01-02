@@ -13,22 +13,27 @@ class MainCoordinator: NSObject, Coordinator {
 
 extension MainCoordinator {
     func start() {
-        let view = Welcome(showTabBar: {[weak self] in self?.showTabBar()})
+        let view = Welcome(showTabBar: {[weak self] in self?.showTabBar()}, onRight: {[weak self] in self?.showAbout()})
         let vc = HostController(rootView: view)
         push(vc)
     }
+    
+    /// bedge
+    /// back to welcome
+    /// push full screen
+    /// restart to TabBar
     
 //    func showLogin() {
 //        let view = Login(onLogin: {[weak self] in self?.showTabBar()}, onInfo: {[weak self] in self?.showInfo()})
 //        let vc = HostController(rootView: view)
 //        push(vc)
 //    }
-//    
-//    func showInfo() {
-//        let view = Info(onRight: {[weak self] in self?.dismiss()})
-//        let vc = HostController(rootView: view)
-//        present(vc)
-//    }
+
+    func showAbout() {
+        let view = About(onRight: {[weak self] in self?.dismiss()})
+        let vc = HostController(rootView: view)
+        present(vc)
+    }
     
     func showTabBar() {
         let tabBarController = TabBarController()
@@ -52,6 +57,14 @@ extension MainCoordinator {
         
         navigationController.pushViewController(tabBarController, animated: true)
 
+    }
+    
+    func selectLastTab() {
+        if let tab = navigationController.viewControllers.last as? TabBarController {
+            if let vcs = tab.viewControllers {
+                tab.selectedIndex = vcs.count - 1
+            }
+        }
     }
 }
 

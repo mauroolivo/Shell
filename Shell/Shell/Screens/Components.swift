@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct Components: View {
+    
+    var onCart: (() -> Void)
+    
     var body: some View {
         ZStack
         {
@@ -15,6 +18,11 @@ struct Components: View {
             VStack {
                 Text("Components")
                     .foregroundColor(Colors.text)
+                Spacer()
+                Button(action: onCart, label: {
+                    Text("Show Cart")
+                        .foregroundColor(Colors.accent)
+                })
                 Spacer()
             }
             
@@ -24,6 +32,6 @@ struct Components: View {
 
 struct Components_Previews: PreviewProvider {
     static var previews: some View {
-        Components()
+        Components(onCart: {})
     }
 }
