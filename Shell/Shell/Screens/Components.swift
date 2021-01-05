@@ -17,21 +17,21 @@ struct Components: View {
         {
             Colors.bg.ignoresSafeArea()
             VStack {
-                Text("Components")
+                Text("components.title".localized())
                     .foregroundColor(Colors.text)
                 Spacer()
                 Button(action: onCart, label: {
-                    Text("Show Cart")
+                    Text("components.show.cart".localized())
                         .foregroundColor(Colors.accent)
                 })
                 Button(action: { onComponentDetail(2) } , label: {
                     
-                    Text("Show detail full screen")
+                    Text("components.show.fullscreen".localized())
                         .foregroundColor(Colors.accent)
                 })
                 Spacer()
             }
-            
+
         }
     }
 }

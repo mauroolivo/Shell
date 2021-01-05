@@ -71,7 +71,7 @@ extension MainCoordinator {
     func showComponentDetail(_ n: Int) {
         let view = ComponentDetail()
         let vc = HostController(rootView: view, navigationBarHidden: false)
-        vc.title = "Component Detail \(n)"
+        vc.title = String(format: "component.detail".localized(), " \(n)")
         navigationController.hidesBottomBarWhenPushed = true
         push(vc)
     }
@@ -81,6 +81,12 @@ extension MainCoordinator {
         if let _ = navigationController.viewControllers.last as? TabBarController {
             navigationController.popViewController(animated: true)
         }
+    }
+    
+    func onLangChange() {
+        onCloseTab()
+        navigationController.viewControllers = []
+        start()
     }
 }
 

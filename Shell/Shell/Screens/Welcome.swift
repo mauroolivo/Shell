@@ -1,4 +1,5 @@
 import SwiftUI
+import Localize_Swift
 
 struct Welcome: View {
     
@@ -10,11 +11,11 @@ struct Welcome: View {
         {
             Colors.bg.ignoresSafeArea()
             VStack {
-                TopBar(title: "Welcome to the Shell app", hideLeft: true, hideRight: false, onRight: onRight)
+                TopBar(title: "welcome.enter".localized(), hideLeft: true, hideRight: false, onRight: onRight)
                     .foregroundColor(Colors.text)
                 Spacer()
                 Button(action: showTabBar, label: {
-                    Text("ENTER")
+                    Text("generic.enter".localized())
                         .foregroundColor(Colors.accent)
                 })
                 Spacer()

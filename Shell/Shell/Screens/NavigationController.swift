@@ -9,6 +9,7 @@ class NavigationController: UINavigationController {
         navigationBar.barTintColor = Colors.uiBg
         navigationBar.tintColor = Colors.uiAccent
         navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: Colors.uiText!]
+        navigationBar.backItem?.title = "asd"
     }
 
 }

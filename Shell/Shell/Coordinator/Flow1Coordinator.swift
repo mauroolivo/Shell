@@ -1,5 +1,6 @@
 import UIKit
 import SwiftUI
+import Localize_Swift
 
 class Flow1Coordinator: NSObject, Coordinator {
     var childCoordinators = [Coordinator]()
@@ -11,6 +12,7 @@ class Flow1Coordinator: NSObject, Coordinator {
     
     init(navigationController: NavigationController) {
         self.navigationController = navigationController
+        super.init()
     }
     
     deinit { print("deinit \(self.classForCoder)") }
@@ -19,7 +21,7 @@ class Flow1Coordinator: NSObject, Coordinator {
         let view = Components(onCart: {[weak self] in self?.showCart()},
                               onComponentDetail: {[weak self] n in self?.showComponentDetail(n)})
         let vc = HostController(rootView: view)
-        vc.tabBarItem = UITabBarItem(title: "Components",
+        vc.tabBarItem = UITabBarItem(title: "tabbar.components".localized(),
                                      image: UIImage(systemName: "circle.grid.hex.fill"),
                                      tag: 0)
         navigationController.viewControllers = [vc]

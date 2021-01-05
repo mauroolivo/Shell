@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Shell
+
+  Created by Mauro Olivo on 03/01/21.
+  
+*/
+"generic.enter" = "ENTRAR";
+"tabbar.components" = "Componentes";

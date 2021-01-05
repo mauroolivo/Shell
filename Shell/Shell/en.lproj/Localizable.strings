@@ -1,0 +1,20 @@
+"generic.enter" = "ENTER";
+
+"tabbar.components" = "Components";
+"tabbar.account" = "Account";
+"tabbar.cart" = "Cart";
+
+"welcome.enter" = "Welcome to the Shell app";
+"about.title" = "About";
+
+"components.title" = "Components";
+"components.show.cart" = "Show Cart";
+"components.show.fullscreen" = "Show full screen";
+
+"account.title" = "Account";
+"account.show.privacy" = "Show Privacy";
+"account.back.welcome" = "Back to Welcome";
+
+"cart.title" = "Cart";
+
+"component.detail" = "Component detail n. %@";

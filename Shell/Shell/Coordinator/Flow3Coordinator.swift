@@ -11,6 +11,7 @@ class Flow3Coordinator: NSObject, Coordinator {
     
     init(navigationController: NavigationController) {
         self.navigationController = navigationController
+        super.init()
     }
     
     deinit { print("deinit \(self.classForCoder)") }
@@ -18,7 +19,7 @@ class Flow3Coordinator: NSObject, Coordinator {
     func start() {
         let view = Cart()
         let vc = HostController(rootView: view)
-        vc.tabBarItem = UITabBarItem(title: "Cart",
+        vc.tabBarItem = UITabBarItem(title: "tabbar.cart".localized(),
                                      image: UIImage(systemName: "cart.fill"),
                                      tag: 2)
         navigationController.viewControllers = [vc]

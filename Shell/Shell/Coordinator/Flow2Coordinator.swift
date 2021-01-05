@@ -11,15 +11,17 @@ class Flow2Coordinator: NSObject, Coordinator {
     
     init(navigationController: NavigationController) {
         self.navigationController = navigationController
+        super.init()
     }
     
     deinit { print("deinit \(self.classForCoder)") }
     
     func start() {
         let view = Account(onPrivacy: {[weak self] in self?.showPrivacy()},
-                           onCloseTab: {[weak self] in self?.onCloseTab()})
+                           onCloseTab: {[weak self] in self?.onCloseTab()},
+                           onLangChange: {[weak self] in self?.onLangChange()})
         let vc = HostController(rootView: view)
-        vc.tabBarItem = UITabBarItem(title: "Account",
+        vc.tabBarItem = UITabBarItem(title: "tabbar.account".localized(),
                                      image: UIImage(systemName: "person.fill"),
                                      tag: 1)
         navigationController.viewControllers = [vc]
@@ -35,6 +37,13 @@ class Flow2Coordinator: NSObject, Coordinator {
     func onCloseTab() {
         if let parent = parentCoordinator as? MainCoordinator {
             parent.onCloseTab()
+        }
+    }
+    
+    
+    func onLangChange() {
+        if let parent = parentCoordinator as? MainCoordinator {
+            parent.onLangChange()
         }
     }
 }

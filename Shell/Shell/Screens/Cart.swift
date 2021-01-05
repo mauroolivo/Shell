@@ -6,7 +6,7 @@ struct Cart: View {
         {
             Colors.bg.ignoresSafeArea()
             VStack {
-                Text("Cart")
+                Text("cart.title".localized())
                     .foregroundColor(Colors.text)
                 Spacer()
             }

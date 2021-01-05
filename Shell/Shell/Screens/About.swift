@@ -9,7 +9,7 @@ struct About: View {
         {
             Colors.bg.ignoresSafeArea()
             VStack {
-                TopBar(title: "About", hideRight: false, onRight: onRight, imgRight:Image(systemName: "multiply"))
+                TopBar(title: "about.title".localized(), hideRight: false, onRight: onRight, imgRight:Image(systemName: "multiply"))
                 Spacer()
             }
         }
