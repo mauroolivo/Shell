@@ -28,9 +28,8 @@ class Flow2Coordinator: NSObject, Coordinator {
     }
  
     func showPrivacy() {
-        let view = Privacy()
-        let vc = HostController(rootView: view, navigationBarHidden: false)
-        vc.title = "Privacy"
+        let view = Privacy(onLeft: {[weak self] in self?.pop()})
+        let vc = HostController(rootView: view)
         push(vc)
     }
     
@@ -39,7 +38,6 @@ class Flow2Coordinator: NSObject, Coordinator {
             parent.onCloseTab()
         }
     }
-    
     
     func onLangChange() {
         if let parent = parentCoordinator as? MainCoordinator {

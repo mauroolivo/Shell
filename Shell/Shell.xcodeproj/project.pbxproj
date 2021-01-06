@@ -126,6 +126,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		34C38B0C25A5062700126BC1 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				3446A3F2259D0FA1001C338C /* Account.swift */,
+				342FEF3825A263CA001BE314 /* AccountViewModel.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		34DFB539259BA278002F9925 = {
 			isa = PBXGroup;
 			children = (
@@ -212,8 +221,7 @@
 				34DFB594259BA451002F9925 /* Welcome.swift */,
 				3446A3D2259CE010001C338C /* About.swift */,
 				3446A3ED259D0206001C338C /* Components.swift */,
-				3446A3F2259D0FA1001C338C /* Account.swift */,
-				342FEF3825A263CA001BE314 /* AccountViewModel.swift */,
+				34C38B0C25A5062700126BC1 /* Account */,
 				3446A401259D125F001C338C /* Cart.swift */,
 				342FEEF225A055BE001BE314 /* Privacy.swift */,
 				342FEF1725A09FC6001BE314 /* ComponentDetail.swift */,

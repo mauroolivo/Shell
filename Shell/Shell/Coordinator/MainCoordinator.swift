@@ -69,9 +69,8 @@ extension MainCoordinator {
     }
     
     func showComponentDetail(_ n: Int) {
-        let view = ComponentDetail()
-        let vc = HostController(rootView: view, navigationBarHidden: false)
-        vc.title = String(format: "component.detail".localized(), " \(n)")
+        let view = ComponentDetail(onLeft: {[weak self] in self?.pop()})
+        let vc = HostController(rootView: view)
         navigationController.hidesBottomBarWhenPushed = true
         push(vc)
     }

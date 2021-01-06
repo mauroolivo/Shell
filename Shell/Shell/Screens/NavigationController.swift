@@ -5,11 +5,8 @@ class NavigationController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        navigationBar.barTintColor = Colors.uiBg
-        navigationBar.tintColor = Colors.uiAccent
-        navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: Colors.uiText!]
-        navigationBar.backItem?.title = "asd"
+//        navigationBar.barTintColor = Colors.uiBg
+//        navigationBar.tintColor = Colors.uiAccent
+//        navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: Colors.uiText!]
     }
-
 }

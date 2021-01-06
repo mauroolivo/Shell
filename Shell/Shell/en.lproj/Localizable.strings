@@ -5,6 +5,7 @@
 "tabbar.cart" = "Cart";
 
 "welcome.enter" = "Welcome to the Shell app";
+
 "about.title" = "About";
 
 "components.title" = "Components";
@@ -18,3 +19,5 @@
 "cart.title" = "Cart";
 
 "component.detail" = "Component detail n. %@";
+
+"privacy.title" = "Privacy";

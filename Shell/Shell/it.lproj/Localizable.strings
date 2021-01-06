@@ -19,3 +19,5 @@
 "cart.title" = "Carrello";
 
 "component.detail" = "Dettaglio componente n. %@";
+
+"privacy.title" = "Privacy";
