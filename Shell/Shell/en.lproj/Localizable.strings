@@ -15,9 +15,14 @@
 "account.title" = "Account";
 "account.show.privacy" = "Show Privacy";
 "account.back.welcome" = "Back to Welcome";
+"account.show.language" = "Change languge";
 
 "cart.title" = "Cart";
 
 "component.detail" = "Component detail n. %@";
 
 "privacy.title" = "Privacy";
+
+"language.title" = "Change language";
+"language.en" = "English";
+"language.it" = "Italian";

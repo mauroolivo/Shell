@@ -15,9 +15,14 @@
 "account.title" = "Account";
 "account.show.privacy" = "Visualizza privacy";
 "account.back.welcome" = "Ritorna alla pagina di benvenuto";
+"account.show.language" = "Cambia lingua";
 
 "cart.title" = "Carrello";
 
 "component.detail" = "Dettaglio componente n. %@";
 
 "privacy.title" = "Privacy";
+
+"language.title" = "Cambia lingua";
+"language.en" = "Inglese";
+"language.it" = "Italiano";

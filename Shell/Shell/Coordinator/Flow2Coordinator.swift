@@ -18,8 +18,8 @@ class Flow2Coordinator: NSObject, Coordinator {
     
     func start() {
         let view = Account(onPrivacy: {[weak self] in self?.showPrivacy()},
-                           onCloseTab: {[weak self] in self?.onCloseTab()},
-                           onLangChange: {[weak self] in self?.onLangChange()})
+                           onLangChange: {[weak self] in self?.showLanguage()},
+                           onCloseTab: {[weak self] in self?.onCloseTab()})
         let vc = HostController(rootView: view)
         vc.tabBarItem = UITabBarItem(title: "tabbar.account".localized(),
                                      image: UIImage(systemName: "person.fill"),
@@ -29,6 +29,13 @@ class Flow2Coordinator: NSObject, Coordinator {
  
     func showPrivacy() {
         let view = Privacy(onLeft: {[weak self] in self?.pop()})
+        let vc = HostController(rootView: view)
+        push(vc)
+    }
+    
+    func showLanguage() {
+        let view = Language(onLeft: {[weak self] in self?.pop()},
+                            onLangChange: {[weak self] in self?.onLangChange()})
         let vc = HostController(rootView: view)
         push(vc)
     }
