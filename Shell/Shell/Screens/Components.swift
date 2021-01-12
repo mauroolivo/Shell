@@ -29,6 +29,15 @@ struct Components: View {
                     Text("components.show.fullscreen".localized())
                         .foregroundColor(Colors.accent)
                 })
+                Button(action: {
+                    Loader.show()
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                        Loader.hide()
+                    }
+                }, label: {
+                    Text("show loader")
+                })
                 Spacer()
             }
 
