@@ -4,10 +4,10 @@ struct Cart: View {
     var body: some View {
         ZStack
         {
-            Colors.bg.ignoresSafeArea()
+          ColorsOld.bg.edgesIgnoringSafeArea(.all)
             VStack {
                 Text("cart.title".localized())
-                    .foregroundColor(Colors.text)
+                    .foregroundColor(ColorsOld.text)
                 Spacer()
             }
             

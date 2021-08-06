@@ -61,7 +61,7 @@ extension MainCoordinator {
     func setBedge(value: String, index: Int) {
         if let tabBarController = navigationController.viewControllers.last as? TabBarController {
             if let vc = tabBarController.viewControllers?[index] {
-                vc.tabBarItem.badgeColor = Colors.uiAccent
+                vc.tabBarItem.badgeColor = ColorsOld.uiAccent
                 vc.tabBarItem.badgeValue = value
             }
         }

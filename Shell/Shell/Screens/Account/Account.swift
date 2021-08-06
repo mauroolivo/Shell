@@ -9,7 +9,7 @@ struct Account: View {
     var body: some View {
         ZStack
         {
-            Colors.bg.ignoresSafeArea()
+          ColorsOld.bg.edgesIgnoringSafeArea(.all)
             VStack {
                 TopBar(title: "account.title".localized())
                 ScrollView {

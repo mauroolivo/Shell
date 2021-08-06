@@ -9,14 +9,14 @@ struct Welcome: View {
     var body: some View {
         ZStack
         {
-            Colors.bg.ignoresSafeArea()
+          ColorsOld.bg.edgesIgnoringSafeArea(.all)
             VStack {
                 TopBar(title: "welcome.enter".localized(), hideLeft: true, hideRight: false, onRight: onRight)
-                    .foregroundColor(Colors.text)
+                    .foregroundColor(ColorsOld.text)
                 Spacer()
                 Button(action: showTabBar, label: {
                     Text("generic.enter".localized())
-                        .foregroundColor(Colors.accent)
+                        .foregroundColor(ColorsOld.accent)
                 })
                 Spacer()
             }

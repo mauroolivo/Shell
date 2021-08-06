@@ -18,7 +18,7 @@ struct Language: View {
     
             ZStack
             {
-                Colors.bg.ignoresSafeArea()
+              ColorsOld.bg.edgesIgnoringSafeArea(.all)
                 VStack {
                     TopBar(title: "language.title".localized(),
                            hideLeft: false,

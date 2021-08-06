@@ -19,18 +19,18 @@ struct TopBar: View {
                     imgLeft
                         .resizable()
                         .frame(width: 10, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(Colors.accent).padding()
+                        .foregroundColor(ColorsOld.accent).padding()
                 })
                 .frame(minWidth: 44, maxWidth: 44, maxHeight: 44)
                 .isHidden(hideLeft)
                 Text(title)
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 44, maxHeight: 44)
-                    .foregroundColor(Colors.text)
+                    .foregroundColor(ColorsOld.text)
                 Button(action: onRight, label: {
                     imgRight
                         .resizable()
                         .frame(width: 20, height: 20, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(Colors.accent).padding()
+                        .foregroundColor(ColorsOld.accent).padding()
                 })
                 .frame(minWidth: 44, maxWidth: 44, maxHeight: 44)
                 .isHidden(hideRight)

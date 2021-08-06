@@ -19,17 +19,17 @@ struct SimpleCell: View {
             VStack {
                 HStack {
                     Text(lbl)
-                        .foregroundColor(Colors.text)
+                        .foregroundColor(ColorsOld.text)
                         .padding()
                     Spacer()
                     Image(systemName: "chevron.right")
-                        .foregroundColor(Colors.accent)
+                        .foregroundColor(ColorsOld.accent)
                         .padding(.trailing)
                         .isHidden(hideRight)
                 }
                 Divider()
                  .frame(height: 1)
-                    .background(Colors.text)
+                    .background(ColorsOld.text)
             }
         })
     }

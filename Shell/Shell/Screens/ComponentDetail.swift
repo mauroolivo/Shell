@@ -7,7 +7,7 @@ struct ComponentDetail: View {
     var body: some View {
         ZStack
         {
-            Colors.bg.ignoresSafeArea()
+          ColorsOld.bg.edgesIgnoringSafeArea(.all)
             VStack {
                 TopBar(title: "about.title".localized(),
                        hideLeft: false,

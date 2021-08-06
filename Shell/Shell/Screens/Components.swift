@@ -15,19 +15,19 @@ struct Components: View {
     var body: some View {
         ZStack
         {
-            Colors.bg.ignoresSafeArea()
+          ColorsOld.bg.edgesIgnoringSafeArea(.all)
             VStack {
                 Text("components.title".localized())
-                    .foregroundColor(Colors.text)
+                    .foregroundColor(ColorsOld.text)
                 Spacer()
                 Button(action: onCart, label: {
                     Text("components.show.cart".localized())
-                        .foregroundColor(Colors.accent)
+                        .foregroundColor(ColorsOld.accent)
                 })
                 Button(action: { onComponentDetail(2) } , label: {
                     
                     Text("components.show.fullscreen".localized())
-                        .foregroundColor(Colors.accent)
+                        .foregroundColor(ColorsOld.accent)
                 })
                 Button(action: {
                     Loader.show()

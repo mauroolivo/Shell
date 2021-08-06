@@ -1,14 +1,7 @@
-//
-//  Colors.swift
-//  Shell
-//
-//  Created by Mauro Olivo on 02/01/21.
-//
-
 import Foundation
 import SwiftUI
 
-struct Colors {
+struct ColorsOld {
     
     static let text = Color("text")
     static let bg = Color("bg")

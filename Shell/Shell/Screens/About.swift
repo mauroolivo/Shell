@@ -7,7 +7,7 @@ struct About: View {
     var body: some View {
         ZStack
         {
-            Colors.bg.ignoresSafeArea()
+          ColorsOld.bg.edgesIgnoringSafeArea(.all)
             VStack {
                 TopBar(title: "about.title".localized(), hideRight: false, onRight: onRight, imgRight:Image(systemName: "multiply"))
                 Spacer()
