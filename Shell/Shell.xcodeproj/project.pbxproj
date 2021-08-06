@@ -32,6 +32,8 @@
 		34B255B526BD2CF900C5013F /* SheetCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B255B326BD2CF900C5013F /* SheetCardsView.swift */; };
 		34B255B626BD2CF900C5013F /* SheetButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B255B426BD2CF900C5013F /* SheetButtonsView.swift */; };
 		34B255B826BD393300C5013F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B255B726BD393300C5013F /* HomeView.swift */; };
+		34B255BA26BD46C700C5013F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B255B926BD46C700C5013F /* SettingsView.swift */; };
+		34B255C126BD652700C5013F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B255C026BD652700C5013F /* Theme.swift */; };
 		34C65D9025ACF00400937755 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C65D8F25ACF00400937755 /* Loader.swift */; };
 		34DFB546259BA278002F9925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DFB545259BA278002F9925 /* AppDelegate.swift */; };
 		34DFB548259BA278002F9925 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DFB547259BA278002F9925 /* SceneDelegate.swift */; };
@@ -88,6 +90,8 @@
 		34B255B326BD2CF900C5013F /* SheetCardsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetCardsView.swift; sourceTree = "<group>"; };
 		34B255B426BD2CF900C5013F /* SheetButtonsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SheetButtonsView.swift; sourceTree = "<group>"; };
 		34B255B726BD393300C5013F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		34B255B926BD46C700C5013F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		34B255C026BD652700C5013F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		34C65D8F25ACF00400937755 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		34C7E07425A3B99200E9C062 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		34C7E07525A3B99200E9C062 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 				34B255AD26BD2CD700C5013F /* Card.swift */,
 				34B255AE26BD2CD700C5013F /* Btn.swift */,
 				34B255AF26BD2CD700C5013F /* Colors.swift */,
+				34B255C026BD652700C5013F /* Theme.swift */,
 			);
 			path = Style;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				34B255B726BD393300C5013F /* HomeView.swift */,
+				34B255B926BD46C700C5013F /* SettingsView.swift */,
 				34B255B426BD2CF900C5013F /* SheetButtonsView.swift */,
 				34B255B326BD2CF900C5013F /* SheetCardsView.swift */,
 				3446A3E0259CF982001C338C /* TabBarController.swift */,
@@ -443,10 +449,12 @@
 				3446A402259D125F001C338C /* Cart.swift in Sources */,
 				34B255B126BD2CD700C5013F /* Btn.swift in Sources */,
 				34DFB59E259BAE6C002F9925 /* View.swift in Sources */,
+				34B255C126BD652700C5013F /* Theme.swift in Sources */,
 				34B255B626BD2CF900C5013F /* SheetButtonsView.swift in Sources */,
 				342FEEF325A055BE001BE314 /* Privacy.swift in Sources */,
 				3446A3D9259CE062001C338C /* TopBar.swift in Sources */,
 				3489492425AA42E90077D307 /* Language.swift in Sources */,
+				34B255BA26BD46C700C5013F /* SettingsView.swift in Sources */,
 				34DFB548259BA278002F9925 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

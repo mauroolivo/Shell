@@ -19,7 +19,34 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     //        self.window = window
     //        window.makeKeyAndVisible()
     
-    let contentView = HomeView()
+    let uis = UITraitCollection.current.userInterfaceStyle
+    var colorScheme: ColorScheme?
+    var systemColorScheme: ColorScheme?
+    switch UserDefaults.standard.theme.userInterfaceStyle {
+    case .dark:
+      colorScheme = .dark
+    case .light:
+      colorScheme = .light
+    default:
+      switch uis {
+      case .dark:
+        colorScheme = .dark
+      default:
+        colorScheme = .light
+      }
+    }
+    switch uis {
+    case .dark:
+      systemColorScheme = .dark
+    default:
+      systemColorScheme = .light
+    }
+    
+    UITableView.appearance().backgroundColor = Color(.bg).uiColor()
+    UITableViewCell.appearance().backgroundColor = Color(.bg).uiColor()
+    UITableView.appearance().tableFooterView = UIView()
+    
+    let contentView = HomeView(theColorScheme: colorScheme!, systemColorScheme: systemColorScheme!)
     
     // Use a UIHostingController as window root view controller.
     if let windowScene = scene as? UIWindowScene {

@@ -35,34 +35,34 @@ struct SheetButtonsView: View {
             }
             .padding([.horizontal])
             .disabled(true)
-          }
-          VStack {
-            Btn(title: "ButtonMain .primary", type: .primaryOutlined, disclosure: Image(systemName: "chevron.right")) {
+          }.padding([.vertical])
+          HStack {
+            Btn(title: "Button", type: .primaryOutlined, disclosure: nil) {
               print("tap")
             }.padding([.horizontal])
             
-            Btn(title: "ButtonMain .secondary", type: .secondaryOutlined, disclosure: nil) {
+            Btn(title: "Button", type: .secondaryOutlined, disclosure: nil) {
               print("tap")
             }.padding([.horizontal])
             
-            Btn(title: "ButtonMain .destructive", type: .destructiveOutlined, disclosure: nil) {
+            Btn(title: "Button", type: .destructiveOutlined, disclosure: nil) {
               print("tap")
             }.padding([.horizontal])
           }
-          VStack {
-            Btn(title: "ButtonMain .primary", type: .primaryOutlined, disclosure: Image(systemName: "chevron.right")) {
+          HStack {
+            Btn(title: "Button", type: .primaryOutlined, disclosure: nil) {
               print("tap")
             }
             .padding([.horizontal])
             .disabled(true)
             
-            Btn(title: "ButtonMain .secondary", type: .secondaryOutlined, disclosure: nil) {
+            Btn(title: "Button", type: .secondaryOutlined, disclosure: nil) {
               print("tap")
             }
             .padding([.horizontal])
             .disabled(true)
             
-            Btn(title: "ButtonMain .destructive", type: .destructiveOutlined, disclosure: nil) {
+            Btn(title: "Button", type: .destructiveOutlined, disclosure: nil) {
               print("tap")
             }
             .padding([.horizontal])
