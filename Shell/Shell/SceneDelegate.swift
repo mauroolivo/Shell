@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     //        self.window = window
     //        window.makeKeyAndVisible()
     
-    let contentView = SheetButtonsView()
+    let contentView = HomeView()
     
     // Use a UIHostingController as window root view controller.
     if let windowScene = scene as? UIWindowScene {

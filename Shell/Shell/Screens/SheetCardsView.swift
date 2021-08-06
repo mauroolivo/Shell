@@ -4,7 +4,7 @@ struct SheetCardsView: View {
   var body: some View {
     
     ZStack {
-      Color.init("bg").edgesIgnoringSafeArea(.all)
+      Color(.bg).edgesIgnoringSafeArea(.all)
       ScrollView {
         VStack {
           VStack {
