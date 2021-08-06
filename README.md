@@ -1,2 +1,2 @@
 # Shell
-Experimental iOS shell app
+SwitUI components
